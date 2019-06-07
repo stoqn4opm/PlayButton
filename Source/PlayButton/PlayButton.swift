@@ -18,8 +18,13 @@ public final class PlayButton: UIButton {
     
     /// The time it takes for the `PlayButtonView` to switch from one state to another.
     ///
-    /// Default value is: 0.7.
-    @IBInspectable public var stateSwitchDuration: TimeInterval = 0.7 { didSet { playButtonView.stateSwitchDuration = stateSwitchDuration } }
+    /// Default value is: 0.3.
+    @IBInspectable public var stateSwitchDuration: TimeInterval = 0.3 { didSet { playButtonView.stateSwitchDuration = stateSwitchDuration } }
+    
+    /// The time it takes for the `PlayButtonView` to switch from one state to another.
+    ///
+    /// Default value is: 0.5.
+    @IBInspectable public var highlightDuration: TimeInterval = 0.5 { didSet { playButtonView.highlightDuration = highlightDuration } }
     
     /// The scale factor of the boundary symbol and load symbol during touch interaction.
     ///

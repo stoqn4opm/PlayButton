@@ -20,8 +20,13 @@ public final class PlayButtonView: UIView {
     
     /// The time it takes for the `PlayButtonView` to switch from one state to another.
     ///
-    /// Default value is: 0.7.
-    @IBInspectable public var stateSwitchDuration: TimeInterval = 0.7
+    /// Default value is: 0.3.
+    @IBInspectable public var stateSwitchDuration: TimeInterval = 0.3
+    
+    /// The time it takes for the `PlayButtonView` to switch from one state to another.
+    ///
+    /// Default value is: 0.5.
+    @IBInspectable public var highlightDuration: TimeInterval = 0.5
     
     /// The scale factor of the boundary symbol and load symbol during touch interaction.
     ///
@@ -121,7 +126,7 @@ public final class PlayButtonView: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        forcefullyEnterState(.play, animated: false)
+        forcefullyEnterState(currentState, animated: false)
     }
 }
 
@@ -157,8 +162,8 @@ extension PlayButtonView {
     /// - Parameter isHighlighted: the state in which you want the view in.
     func highlight(_ isHighlighted: Bool) {
         
-        let colorFlipTime = stateSwitchDuration * 0.5
-        let transformTime = stateSwitchDuration
+        let colorFlipTime = highlightDuration * 0.5
+        let transformTime = highlightDuration
         let transform = isHighlighted ? CGAffineTransform.identity.scaledBy(x: maxBoundaryScale, y: maxBoundaryScale) : .identity
         
         let animator1 = UIViewPropertyAnimator(duration: transformTime, dampingRatio: 0.6) { [weak self] in

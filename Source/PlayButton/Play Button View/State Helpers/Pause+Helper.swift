@@ -20,8 +20,9 @@ final class PauseView: UIView {
         foregroundColor.setFill()
         foregroundColor.setStroke()
         
-        let path = UIBezierPath.pauseButton(center: center, height: bounds.height / 2.3, delta: bounds.width / 4)
-        path.lineWidth = bounds.width * 0.15
+        let commonPart = bounds.height * 0.8
+        let path = UIBezierPath.pauseButton(center: center, height: commonPart / 2.4, delta: commonPart / 4)
+        path.lineWidth = commonPart * 0.15
         path.lineCapStyle = .round
         path.stroke()
     }

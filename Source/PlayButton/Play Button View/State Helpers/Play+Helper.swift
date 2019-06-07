@@ -20,7 +20,8 @@ final class PlayView: UIView {
         foregroundColor.setFill()
         foregroundColor.setStroke()
 
-        let path = UIBezierPath.playSymbolInCircle(withRadius: bounds.width * 0.38, center: center, cornerRadius: bounds.width * 0.05)
+        let commonPart = bounds.height * 0.8
+        let path = UIBezierPath.playSymbolInCircle(withRadius: commonPart * 0.37, center: center, cornerRadius: commonPart * 0.05)
         path.stroke()
         path.fill()
     }
