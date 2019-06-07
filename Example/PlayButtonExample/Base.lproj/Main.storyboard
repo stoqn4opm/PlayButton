@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayButtonExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-ii-ntj" customClass="PlayButtonView" customModule="PlayButton">
+                                <rect key="frame" x="87" y="54" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.84648910749999995" green="0.58355174779999996" blue="0.34196110870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Rti-Xb-euV"/>
+                                    <constraint firstAttribute="height" constant="240" id="Una-gg-82M"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playRestColor">
+                                        <color key="value" red="0.35457016759999999" green="0.2838311496" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playTapColor">
+                                        <color key="value" red="1" green="0.57694173360000001" blue="0.28436872120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playLoadColor">
+                                        <color key="value" red="0.63447604950000003" green="0.69305802630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pauseRestColor">
+                                        <color key="value" red="0.84648910749999995" green="0.58355174779999996" blue="0.34196110870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pauseTapColor">
+                                        <color key="value" red="1" green="0.13960336879999999" blue="0.13081060420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="loadTapColor">
+                                        <color key="value" red="0.96568983239999995" green="1" blue="0.50302347449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="loadRestColor">
+                                        <color key="value" red="0.15238330319999999" green="0.95663796020000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="boundaryTapColor">
+                                        <color key="value" red="1" green="0.55900062299999997" blue="0.73997179420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="boundaryRestColor">
+                                        <color key="value" red="0.35457016759999999" green="0.2838311496" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRu-2p-2g1" customClass="PlayButton" customModule="PlayButton">
+                                <rect key="frame" x="157" y="712" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Brf-kc-Pj7"/>
+                                    <constraint firstAttribute="height" constant="100" id="Fg4-JX-ieW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playRestColor">
+                                        <color key="value" red="0.25260965694301152" green="1" blue="0.42981698343221963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playTapColor">
+                                        <color key="value" red="0.053060706219999997" green="0.69473481510000001" blue="0.82438380280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="playLoadColor">
+                                        <color key="value" red="1" green="0.576941733596535" blue="0.28436872124337209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pauseRestColor">
+                                        <color key="value" red="0.35457016756534099" green="0.28383114957317745" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pauseTapColor">
+                                        <color key="value" red="1" green="0.55900062299865538" blue="0.73997179423849169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pauseLoadColor">
+                                        <color key="value" red="1" green="0.13960336877526036" blue="0.13081060422607249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="boundaryRestColor">
+                                        <color key="value" red="0.15238330319905613" green="0.95663796020355252" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="loadRestColor">
+                                        <color key="value" red="0.63447604946314407" green="0.69305802627840241" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="boundaryTapColor">
+                                        <color key="value" red="1" green="0.0" blue="0.86276958037588436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="loadTapColor">
+                                        <color key="value" red="0.96568983244344941" green="1" blue="0.50302347452197826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxBoundaryScale">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvb-mx-ZNS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jRu-2p-2g1" secondAttribute="bottom" constant="50" id="AMi-kE-vlP"/>
+                            <constraint firstItem="zmY-ii-ntj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QJg-mP-Hsc"/>
+                            <constraint firstItem="zmY-ii-ntj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOf-HO-xAw"/>
+                            <constraint firstItem="jRu-2p-2g1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wBf-PS-2KG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="jRu-2p-2g1" id="dKy-C5-Mdr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
