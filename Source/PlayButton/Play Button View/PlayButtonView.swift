@@ -122,11 +122,25 @@ public final class PlayButtonView: UIView {
         embed(loadingSymbol)
         embed(boundaryCircle)
         loadingSymbol.rotate()
+        NotificationCenter.default.addObserver(self, selector: #selector(resumeAnimations), name: UIApplication.willEnterForegroundNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     public override func layoutSubviews() {
         super.layoutSubviews()
         forcefullyEnterState(currentState, animated: false)
+    }
+}
+
+// MARK: - Resume Animations
+
+extension PlayButtonView {
+    
+    @objc private func resumeAnimations() {
+        loadingSymbol.rotate()
     }
 }
 
